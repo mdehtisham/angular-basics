@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./first.component.css']
 })
 export class FirstComponent implements OnInit {
+  first = true;
+  second = false;
+  third = false;
 
   constructor() { }
 
