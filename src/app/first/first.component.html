@@ -1,9 +1,14 @@
-<h3>first works! coming from the first component</h3>
+<p>{{receivedObj | json}}</p>
 
-<p *ngIf="first === true; else normalSortIcon"> first block is true</p>
+<app-second (sendObject)="sendObj($event)"></app-second>
+
+
+
+<!-- this is ngIf derective syntax -->
+<!-- <p *ngIf="first === true; else normalSortIcon"> first block is true</p>
 <ng-template #normalSortIcon>
 <p *ngIf="second === true; else default">second block is true</p>
 </ng-template>
 <ng-template #default>
   <p *ngIf="third=== true">third block is true</p>
-  </ng-template>
+  </ng-template> -->
