@@ -12,6 +12,11 @@ export class SecondComponent implements OnInit {
   @Output() public sendObject = new EventEmitter<any>();
   name = 'Ehtisham';
   age = 26;
+  templateObjFromSecond = {
+    name: "jane",
+    country: "Cannada",
+    profile: "Test Engineer"
+  }
 
   constructor() { }
 

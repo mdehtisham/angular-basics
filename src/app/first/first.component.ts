@@ -10,6 +10,11 @@ export class FirstComponent implements OnInit {
   second = false;
   third = false;
   receivedObj: Object = {}
+  templateObjFromFirst = {
+    name: "john",
+    country: "US",
+    profile: "Software Engineer"
+  }
   constructor() { }
 
   ngOnInit(): void {
@@ -18,5 +23,6 @@ export class FirstComponent implements OnInit {
   sendObj(event: Object) {
     this.receivedObj = event
   }
+
 
 }
